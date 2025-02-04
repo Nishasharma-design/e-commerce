@@ -30,7 +30,8 @@
  - React-router
 
 ## My struggle:-
- - I would rather say, this project was actually an opportunity to learn alot more about what React can offer to make life easy.
+ - I would say, this project was actually an opportunity to learn alot more about what React can offer to make life easy.
+ - I enjoyed working on each and every part of this project
 
 ## Future Goals
  - I might like to add more products along with a search bar for the users to be able to type in the product they are looking for 
