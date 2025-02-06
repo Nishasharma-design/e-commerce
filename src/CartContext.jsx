@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
        if (alreadyInTheList) {
       //first it checks if the product is already in the cart, if yes, then 
      //it increases the quantity        
-          const newQty = alreadyInTheList.quantity + product.quantity;
+          const newQty = alreadyInTheList.quantity + 1;
           if (newQty > product.quantity) return; //this ensures the qty does'nt exceed the available stock, if it
           //does, it stops execution
 
@@ -21,7 +21,7 @@ export const CartProvider = ({ children }) => {
 // else it keeps the item as it is. 
            );
        } else {
-        setCart([...cart, { ...product, quantity: product.quantity || 1, selectedVariant: product.variants ? product.variants[0] : null }]); //if product doesn't exist, add it as a new product with qty 1 or product.quantity
+        setCart([...cart, { ...product, quantity: 1 }]); //if product doesn't exist, add it as a new product with qty 1 or product.quantity
        }
     };
 
